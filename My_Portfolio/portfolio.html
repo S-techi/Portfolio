@@ -1,0 +1,223 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio | Hannah</title>
+  <meta name="description" content="Projects by Hannah: UoK Xchange, SwiftBank, KeyNest Real Estate, Veld & Hive, Pen and Purpose and Cat Feeds.">
+  <meta name="keywords" content="Hannah, Android developer, web developer, full-stack, Kenya, University of Kabianga, portfolio">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-page">
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:youremail@example.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>A selection of the apps and websites I have built. Swipe through and open any project.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper projects-carousel">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "spaceBetween": 24,
+              "slidesPerView": 1,
+              "autoplay": {
+                "delay": 4500,
+                "pauseOnMouseEnter": true,
+                "disableOnInteraction": false
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "breakpoints": {
+                "768": { "slidesPerView": 2 },
+                "1200": { "slidesPerView": 3 }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-cover"><i class="bi bi-arrow-left-right"></i></div>
+                <div class="project-body">
+                  <span class="project-kind">Web app</span>
+                  <h4>UoK Xchange</h4>
+                  <p>A barter and marketplace platform for University of Kabianga students across three campuses, with verified student emails and live chat.</p>
+                  <div class="project-tags"><span>React</span><span>Node.js</span><span>Supabase</span></div>
+                  <!-- Replace # with the real link to this project -->
+                  <a href="#" class="project-link" target="_blank" rel="noopener">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-cover"><i class="bi bi-bank"></i></div>
+                <div class="project-body">
+                  <span class="project-kind">Android app</span>
+                  <h4>SwiftBank</h4>
+                  <p>An Android banking app with transfers, QR receiving, bill payments and M-Pesa top-ups, backed by Spring Boot.</p>
+                  <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>M-Pesa API</span></div>
+                  <!-- Replace # with the real link to this project -->
+                  <a href="#" class="project-link" target="_blank" rel="noopener">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-cover"><i class="bi bi-building"></i></div>
+                <div class="project-body">
+                  <span class="project-kind">Website</span>
+                  <h4>KeyNest Real Estate</h4>
+                  <p>A real estate website with Kenyan property listings, agents and services, each on its own page.</p>
+                  <div class="project-tags"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+                  <!-- Replace # with the real link to this project -->
+                  <a href="#" class="project-link" target="_blank" rel="noopener">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-cover"><i class="bi bi-shop"></i></div>
+                <div class="project-body">
+                  <span class="project-kind">Website</span>
+                  <h4>Veld &amp; Hive</h4>
+                  <p>A honey shop product page built from a design, fully responsive and interactive.</p>
+                  <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                  <!-- Replace # with the real link to this project -->
+                  <a href="#" class="project-link" target="_blank" rel="noopener">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-cover"><i class="bi bi-pen"></i></div>
+                <div class="project-body">
+                  <span class="project-kind">Website</span>
+                  <h4>Pen and Purpose</h4>
+                  <p>A website I designed and built from scratch.</p>
+                  <div class="project-tags"><span>Web design</span><span>Responsive</span></div>
+                  <!-- Replace # with the real link to this project -->
+                  <a href="#" class="project-link" target="_blank" rel="noopener">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-cover"><i class="bi bi-heart"></i></div>
+                <div class="project-body">
+                  <span class="project-kind">Website</span>
+                  <h4>Cat Feeds</h4>
+                  <p>A website I designed and built from scratch.</p>
+                  <div class="project-tags"><span>Web design</span><span>Responsive</span></div>
+                  <!-- Replace # with the real link to this project -->
+                  <a href="#" class="project-link" target="_blank" rel="noopener">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>&copy; <span>2026</span> <strong class="px-1 sitename">Hannah</strong> <span>&middot; Android &amp; Web Developer, Kenya</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/S-techi" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/hannah-kalunda-0ba4b1371/?isSelfProfile=true" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="kalundahannah@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
